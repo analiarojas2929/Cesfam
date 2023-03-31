@@ -1,0 +1,44 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+     min-height: 100vh; 
+    }
+
+.angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    gap: 0px;
+    height: 100%;
+    
+ }
+   
+ #login {
+ 
+    background-color: #388fb1; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 4;
+    width: 830px;
+    height: 625px;
+    text-align: none;
+    position: relative;
+ }
+ #informacion {
+ 
+    background-color: #777777; 
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 5;
+    grid-column-end: 6;
+    
+ }
+
