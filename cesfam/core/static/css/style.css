@@ -42,3 +42,23 @@ body {
     
  }
 
+img.inicio{
+    float: left; 
+    height: 150px;
+    left: 300px;
+    position: relative;
+    top: 80px;
+    width: 150px;
+    z-index: 1;
+}
+
+
+.nombre{
+    float: left; 
+    height: 150px;
+    left: 180px;
+    position: relative;
+    top: 250px;
+    width: 150px;
+    z-index: 1;
+}
