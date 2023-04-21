@@ -6,4 +6,8 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('',views.login,name='login'),
+    path('menu',views.menu,name='menu'),
+    path('inventario',views.inventario,name='inventario'),
+    path('buscar',views.buscar,name='buscar'),
+    path('medicamentos',views.medicamentos,name='medicamentos'),
 ]
