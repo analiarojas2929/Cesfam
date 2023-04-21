@@ -127,7 +127,7 @@ img.inicio{
 }
 
 .olvido{
-    padding: 40px 55px;
+    padding: 90px 80px;
     position: absolute;
     color: #ffff;
 }
@@ -175,3 +175,14 @@ img.informacion{
 
 
 
+.btningresar{
+    left: 180px;
+    position: absolute;
+    top: 500px;
+    appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  color: #FFFFFF;
+  padding: 10px 70px;
+  border-radius: 20px;
+}

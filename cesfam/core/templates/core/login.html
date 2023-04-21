@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,45 @@
     <title>Inicio</title>
     <link type="text/css" rel="stylesheet" href="{% static '../static/css/style.css' %}">
 </head>
+
 <body>
     <div class="angry-grid">
         <div id="login">&nbsp;
-            <nav class="inicio"> <img class="inicio" src="{% static '../static/img/logologin.png' %}" alt="inicio" /></nav>
+            <nav class="inicio"> <img class="inicio" src="{% static '../static/img/logologin.png' %}" alt="inicio" />
+            </nav>
             <form>
-            <div class="nombre">
-                <label for="input" class="input-label">Ingrese nombre de usuario</label>
-                <input type="text" id="input" class="input-text">
-            <div class="password">
-                <label for="input" class="input-label-contraseña">ingrese contraseña</label>
-                <input type="password" id="input" class="input-text">
-            <div class="olvido-contraseña">
-                <a class="olvido" href="">¿Olvido su contraseña?</a>
-            </div>
-            </div>
-            </div>
+                <div class="nombre">
+                    <label for="input" class="input-label">Ingrese nombre de usuario</label>
+                    <input type="text" id="input" class="input-text">
+                    <div class="password">
+                        <label for="input" class="input-label-contraseña">ingrese contraseña</label>
+                        <input type="password" id="input" class="input-text">
+                        <div class="ingresar">
+                            <a  href="{% url 'menu' %}" class="btningresar" type="button" role="button">Ingresar</a>
+                            <div class="olvido-contraseña">
+                                <a class="olvido" href="">¿Olvido su contraseña?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
         <div id="informacion">&nbsp;
             <div class="bienvenido">
-            <a class="bienvenidos">bienvenido</a>
-        </div>
-            <div class="informacion"> 
+                <a class="bienvenidos">bienvenido</a>
+            </div>
+            <div class="informacion">
                 <img class="informacion" src="{% static '../static/img/medico.png' %}" alt="inicio" />
             </div>
             <div class="nombree">
-            <a class="nombre-cesfam">Cesfam "sin nombre"</a>
-            <a class="fecha">2023</a>
+                <a class="nombre-cesfam">Cesfam "sin nombre"</a>
+                <a class="fecha">2023</a>
+            </div>
+            <div class="ayuda">
+                <button class="btnayuda" role="button"> Ayuda</button>
+            </div>
         </div>
-        <div class="ayuda">
-            <button class="btnayuda" role="button"> Ayuda</button>
-        </div>
-        </div>
-      </div>
+    </div>
 </body>
+
 </html>
