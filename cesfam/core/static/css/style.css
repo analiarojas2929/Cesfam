@@ -27,7 +27,7 @@ body {
  
     grid-row-end: 5;
     grid-column-end: 4;
-    width: 630px;
+    width: 530px;
     height: 625px;
     text-align: none;
     position: relative;
@@ -45,10 +45,10 @@ body {
 
 img.inicio{
     float: left; 
-    left: 250px;
+    left: 180px;
     position: relative;
     top: 80px;
-    width: 200px;
+    width: 190px;
     z-index: 1;
 }
 
@@ -61,6 +61,7 @@ img.inicio{
     margin-top: 300px;
     width: 150px;
     z-index: 1;
+    margin-left: -80px;
 }
 
 
@@ -123,4 +124,31 @@ img.inicio{
       z-index: 2;
       pointer-events: none;
       text-transform: uppercase;
+}
+
+.olvido{
+    padding: 40px 55px;
+    position: absolute;
+    color: #ffff;
+}
+
+.bienvenidos{
+    text-transform: uppercase;
+    margin-top: 20px;
+    left: 20px;
+    color: #5892b6;
+    font-size: 50px;
+}
+
+img.informacion{
+    float: left; 
+    left: -100px;
+    position: relative;
+    top: 80px;
+    width: 500px;
+    z-index: 1;
+}
+
+.nombre-cesfam{
+    margin-top: 200px;
 }
