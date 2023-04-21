@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body {
-     min-height: 100vh; 
+     min-height: 100vh;
+     font-family: Arial; 
     }
 
 .angry-grid {
@@ -20,20 +21,20 @@ body {
    
  #login {
  
-    background-color: #388fb1; 
+    background-color: #5892b6; 
     grid-row-start: 1;
     grid-column-start: 1;
  
     grid-row-end: 5;
     grid-column-end: 4;
-    width: 830px;
+    width: 630px;
     height: 625px;
     text-align: none;
     position: relative;
  }
  #informacion {
  
-    background-color: #777777; 
+    background-color: #ffff; 
     grid-row-start: 1;
     grid-column-start: 4;
  
@@ -44,11 +45,10 @@ body {
 
 img.inicio{
     float: left; 
-    height: 150px;
-    left: 300px;
+    left: 250px;
     position: relative;
     top: 80px;
-    width: 150px;
+    width: 200px;
     z-index: 1;
 }
 
@@ -56,9 +56,71 @@ img.inicio{
 .nombre{
     float: left; 
     height: 150px;
-    left: 180px;
-    position: relative;
-    top: 250px;
+    left: 90px;
+    position:unset;
+    margin-top: 300px;
     width: 150px;
     z-index: 1;
+}
+
+
+
+.input-label{
+    position: relative;
+    color: aliceblue;
+    transform-origin: left center;
+      font-weight: 100;
+      letter-spacing: 0.01em;
+      font-size: 15px;
+      box-sizing: border-box;
+      padding: 10px 35px;
+      display: block;
+      position: absolute;
+      margin-top: -40px;
+      z-index: 2;
+      pointer-events: none;
+      text-transform: uppercase;
+}
+
+.input-text{
+    line-height: 0;
+    font-size: 17px;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    border-radius: 60px;
+    background-color: #707070;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    border-style: double;
+    color: #ffff;
+}
+
+.password{
+    float: left; 
+    height: 150px;
+    left: 90px;
+    margin-top: 50px;
+    width: 150px; 
+}
+
+
+.input-label-contraseña{
+    position: relative;
+    color: aliceblue;
+    transform-origin: left center;
+      font-weight: 100;
+      letter-spacing: 0.01em;
+      font-size: 15px;
+      box-sizing: border-box;
+      padding: 10px 55px;
+      display: block;
+      position: absolute;
+      margin-top: -40px;
+      z-index: 2;
+      pointer-events: none;
+      text-transform: uppercase;
 }
