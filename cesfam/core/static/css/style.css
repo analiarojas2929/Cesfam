@@ -150,5 +150,28 @@ img.informacion{
 }
 
 .nombre-cesfam{
-    margin-top: 200px;
+    left: 600px;
+   position: absolute;
+    top: 500px;
+    font-weight: 700;
 }
+
+.btnayuda{
+    left: 1100px;
+    position: absolute;
+    top: 500px;
+    appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  color: #FFFFFF;
+  padding: 10px 70px;
+}
+
+.fecha{
+    left: 600px;
+   position: absolute;
+    top: 520px;
+}
+
+
+
