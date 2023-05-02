@@ -18,35 +18,34 @@
             <form>
                 <div class="nombre">
                     <label for="input" class="input-label">Ingrese nombre de usuario</label>
-                    <input type="text" id="input" class="input-text">
+                    <input type="text" class="input-text">
                     <div class="password">
                         <label for="input" class="input-label-contraseña">ingrese contraseña</label>
-                        <input type="password" id="input" class="input-text">
-                        <div class="ingresar">
-                            <a  href="{% url 'menu' %}" class="btningresar" type="button" role="button">Ingresar</a>
-                            <div class="olvido-contraseña">
-                                <a class="olvido" href="">¿Olvido su contraseña?</a>
-                            </div>
+                        <input type="password" class="input-text">
+                        <a href="{% url 'menu' %}" class="btningresar" type="button" role="button">Ingresar</a>
+                        <div class="olvido-contraseña">
+                            <a class="olvido" href="">¿Olvido su contraseña?</a>
                         </div>
                     </div>
                 </div>
-            </form>
         </div>
-        <div id="informacion">&nbsp;
-            <div class="bienvenido">
-                <a class="bienvenidos">bienvenido</a>
-            </div>
-            <div class="informacion">
-                <img class="informacion" src="{% static '../static/img/medico.png' %}" alt="inicio" />
-            </div>
-            <div class="nombree">
-                <a class="nombre-cesfam">Cesfam "sin nombre"</a>
-                <a class="fecha">2023</a>
-            </div>
-            <div class="ayuda">
-                <button class="btnayuda" role="button"> Ayuda</button>
-            </div>
+        </form>
+    </div>
+    <div id="informacion">&nbsp;
+        <div class="bienvenido">
+            <a class="bienvenidos">bienvenido</a>
         </div>
+        <div class="informacion">
+            <img class="informacion" src="{% static '../static/img/medico.png' %}" alt="inicio" />
+        </div>
+        <div class="nombree">
+            <a class="nombre-cesfam">Cesfam "sin nombre"</a>
+            <a class="fecha">2023</a>
+        </div>
+        <div class="ayuda">
+            <button class="btnayuda" role="button"> Ayuda</button>
+        </div>
+    </div>
     </div>
 </body>
 

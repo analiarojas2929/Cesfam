@@ -1,13 +1,69 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menú</title>
+    <link type="text/css" rel="stylesheet" href="{% static '../static/css/style.css' %}">
 </head>
+
 <body>
+
+    <div class="angry-grid">
+        <div id="login">&nbsp;
+
+            <div class="btninventario">
+                <button class="btninventario" onclick="window.location.href='inventario.html'">
+                    <img class="btninventario" src="{% static '../static/img/inventario.png' %}" alt="Inventario" />
+                </button>
+            </div>
+
+            <br><br>
+
+            <div id="btnperfil">
+                <button class="button" onclick="window.location.href='perfil.html'">
+                    <img class="perfil" src="{% static '../static/img/perfil.png' %}" alt="Perfil" />
+                </button>
+            </div>
+
+
+            <div id="btnbuscar">
+                <button class="button" onclick="window.location.href='buscar.html'">
+                    <img class="buscar" src="{% static '../static/img/buscar.png' %}" alt="Buscar" />
+                </button>
+            </div>
+
+
+            <div id="btnreservas">
+                <button class="button" onclick="window.location.href='reservas.html'">
+                    <img class="reservas" src="{% static '../static/img/reservas.png' %}" alt="Reservas" />
+                </button>
+            </div>
+
+
+            <div id="btnprescripciones">
+                <button class="button" onclick="window.location.href='prescripciones.html'">
+                    <img class="prescripciones" src="{% static '../static/img/prescripciones.png' %}"
+                        alt="Prescripciones" />
+                </button>
+            </div>
+
+            <div id="btnajustes">
+                <button class="button" onclick="window.location.href='ajustes.html'">
+                    <img class="ajustes" src="{% static '../static/img/ajustes.png' %}" alt="Ajustes" />
+                </button>
+            </div>
+        </div>
     
+    <div id="informacion">&nbsp;
+        <div class="menuimg">
+            <img class="menuimg" src="{% static '../static/img/menu.png' %}" alt="" />
+        </div>
+    </div>
+</div>
 </body>
+
 </html>
