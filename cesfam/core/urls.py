@@ -5,7 +5,8 @@ from django.conf.urls.static import static
 from django.views.generic import TemplateView
 
 urlpatterns = [
-    path('',views.login,name='login'),
+    path('',views.registro,name='registro'),
+    path('login',views.login,name='login'),
     path('menu',views.menu,name='menu'),
     path('inventario',views.inventario,name='inventario'),
     path('buscar',views.buscar,name='buscar'),
