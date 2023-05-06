@@ -28,7 +28,7 @@ body {
     grid-row-end: 5;
     grid-column-end: 4;
     width: 550px;
-    height: 800px;
+    height: 850px;
     text-align: none;
     position: relative;
  }
@@ -130,8 +130,8 @@ img.inicio{
     display: flex;
     color: #ffff;
     position: absolute;
-    margin-top: 100px;
-    margin-left: 80px;
+    margin-top: 150px;
+    margin-left: 90px;
 }
 
 .bienvenidos{
@@ -175,12 +175,21 @@ img.informacion{
     top: 520px;
 }
 
-
-
 .btningresar{
     left: 180px;
     position: absolute;
-    top: 680px;
+    top: 550px;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  color: #FFFFFF;
+  padding: 10px 70px;
+  border-radius: 20px;
+}
+
+.btningresarregistro{
+    left: 180px;
+    position: absolute;
+    top: 630px;
   background-color: #000000;
   border: 2px solid #1A1A1A;
   color: #FFFFFF;
@@ -252,10 +261,11 @@ img.registro{
     position: relative;
     display: inline-block;
     margin-bottom: 15px;
-    width: 100%;
+    width: 120%;
     margin-top: 20px;
     margin-left: 80px;
 }    .select select {
+    text-transform: uppercase;
         font-family: 'Arial';
         display: inline-block;
         width: 100%;
@@ -301,4 +311,15 @@ img.registro{
 }
 .select select:disabled ~ .select_arrow {
     border-top-color: #cccccc;
+}
+
+.btnregistrar{
+    left: 180px;
+    position: absolute;
+    top: 570px;
+  background-color: #363636;
+  border: 2px solid #363636;
+  color: #FFFFFF;
+  padding: 10px 60px;
+  border-radius: 20px;
 }

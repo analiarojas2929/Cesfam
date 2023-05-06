@@ -24,26 +24,22 @@
                     <input type="text" class="input-textregistro">
                     <div class="password">
                         <label for="input" class="input-label-contraseña">ingrese contraseña</label>
-                        <input type="password" class="input-textregistro">
-                    <div class="recordarpassword">
-                            <label for="input" class="input-label-contraseña">Confirmar contraseña</label>
-                            <input type="password" class="input-textregistro">   
+                        <input type="password" class="input-textregistro">   
                             <div class="select">
                                 <select>
-                                    <option>Selecionar</option>
                                     <option>Medico</option>
                                     <option>Farmaceutico</option>
                                 </select>
                                 <div class="select_arrow">
                                 </div>
                             </div>
-                            <a href="{% url 'menu' %}" class="btningresar" type="button" role="button">Ingresar</a>
+                            <a href="{% url 'menu' %}" class="btnregistrar" type="button" role="button">Registrar</a>
+                            <a href="{% url 'login' %}" class="btningresarregistro" type="button" role="button">Ingresar</a>
                         <div class="olvido-contraseña">
                             <a class="olvido" href="">¿Olvido su contraseña?</a>
                         </div>
                     </div>
                 </div> 
-                </div>
         </div>
         </form>
     <div id="informacion">&nbsp;
