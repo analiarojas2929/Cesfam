@@ -6,8 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventario</title>
+    <link type="text/css" rel="stylesheet" href="{% static '../static/css/style.css' %}">
 </head>
 <body>
-    
+    <div class="angry-grid">
+        <div id="inicioinv">&nbsp;
+            <div class="stock">
+                <a href="{% url 'menu' %}" class="btnstock" type="button"><ul class="stocka">stock</ul><img src="{% static '../static/img/stockinv.png' %}"></a>
+            
+            </div>
+        </div>
+    <div id="informacioninv">&nbsp;
+        
+    </div>
 </body>
 </html>

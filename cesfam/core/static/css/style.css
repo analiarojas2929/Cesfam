@@ -43,6 +43,30 @@ body {
     
  }
 
+ #inicioinv {
+ 
+    background-color: #5892b6; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 4;
+    width: 850px;
+    height: 850px;
+    text-align: none;
+    position: relative;
+ }
+ #informacioninv {
+ 
+    background-color: #ffff; 
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 5;
+    grid-column-end: 6;
+    
+ }
+
 img.inicio{
     float: left; 
     left: 180px;
@@ -322,4 +346,21 @@ img.registro{
   color: #FFFFFF;
   padding: 10px 60px;
   border-radius: 20px;
+}
+
+.btnstock{
+    background-color: transparent;
+    padding: 20px;
+}
+
+.stocka{
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 88px;
+}
+
+.stock{
+    margin-top: 200px;
+    margin-left: 100px;
 }
