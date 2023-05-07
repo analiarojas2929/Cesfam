@@ -11,10 +11,20 @@
 <body>
     <div class="angry-grid">
         <div id="inicioinv">&nbsp;
+            <nav class="menu">
             <div class="stock">
                 <a href="{% url 'menu' %}" class="btnstock" type="button"><ul class="stocka">stock</ul><img src="{% static '../static/img/stockinv.png' %}"></a>
-            
             </div>
+            <div class="medicamentos">
+                <a href="{% url 'menu' %}" class="btnmedicamento" type="button"><ul class="medic">medicamentos</ul><img class="medicament" src="{% static '../static/img/medicamentosinv.png' %}"></a>
+            </div>
+            <div class="registromedicamento">
+                <a href="{% url 'menu' %}" class="btnregistro" type="button"><ul class="registroul">Registro de medicamentos</ul><img src="{% static '../static/img/registrodemedicantosinv.png' %}"></a>
+            </div>
+            <div class="retirodemedicamento">
+                <a href="{% url 'menu' %}" class="btnretiro" type="button"><ul class="retiroul">Retiro de medicamentos</ul><img class="medicament" src="{% static '../static/img/retiroinv.png' %}"></a>
+            </div>
+        </nav>
         </div>
     <div id="informacioninv">&nbsp;
         

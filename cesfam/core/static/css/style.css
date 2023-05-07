@@ -361,7 +361,54 @@ ul.stocka{
     color:#FFFFFF ;
 }
 
+ul.registroul{
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 110px;
+    color:#FFFFFF ;
+}
+
+ul.retiroul{
+    text-transform: uppercase;
+    position: absolute;
+    margin-top:150px;
+    color:#FFFFFF ;
+}
+
 .stock{
     margin-top: 200px;
     margin-left: 100px;
+    display: inline-block;
+}
+
+
+
+ul.medic{
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 115px;
+    color:#FFFFFF ;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.medicamentos{
+    display:inline-flex;
+    margin-top: 200px;
+    margin-left: 100px;
+
+}
+
+.registromedicamento{
+    display:inline-flex;
+    margin: 20px 130px;
+}
+
+.retirodemedicamento{
+    display:inline-flex;
+    margin: 20px 130px;
+}
+
+img.medicament{
+    padding: 20px;
 }
