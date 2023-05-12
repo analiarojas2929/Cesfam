@@ -166,6 +166,14 @@ img.inicio{
     font-size: 50px;
 }
 
+.inventario{
+    text-transform: uppercase;
+    margin-top: 20px;
+    left: 20px;
+    color: #5892b6;
+    font-size: 80px;
+}
+
 img.informacion{
     float: left; 
     left: -100px;
@@ -359,6 +367,7 @@ ul.stocka{
     margin-left: 60px;
     margin-top: 88px;
     color:#FFFFFF ;
+    font-size: small;
 }
 
 ul.registroul{
@@ -366,6 +375,8 @@ ul.registroul{
     position: absolute;
     margin-top: 110px;
     color:#FFFFFF ;
+    font-size: small;
+    margin-left: -30px;
 }
 
 ul.retiroul{
@@ -373,12 +384,14 @@ ul.retiroul{
     position: absolute;
     margin-top:150px;
     color:#FFFFFF ;
+    font-size: small;
 }
 
 .stock{
     margin-top: 200px;
     margin-left: 100px;
     display: inline-block;
+    padding: 20px 40px;
 }
 
 
@@ -389,26 +402,36 @@ ul.medic{
     margin-top: 115px;
     color:#FFFFFF ;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 35px;
+    font-size: small;
 }
 
 .medicamentos{
     display:inline-flex;
     margin-top: 200px;
     margin-left: 100px;
-
 }
 
 .registromedicamento{
     display:inline-flex;
     margin: 20px 130px;
+    margin-left: 170px;
 }
 
 .retirodemedicamento{
     display:inline-flex;
-    margin: 20px 130px;
+    padding: 20px 40px;
+}
+
+img.retiroinv{
+    margin-top: 40px;
 }
 
 img.medicament{
     padding: 20px;
+}
+
+
+.imginventario{
+    padding: 80px;
 }
