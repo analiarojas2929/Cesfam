@@ -203,6 +203,14 @@ img.inicio{
     font-size: 80px;
 }
 
+.medicamentospg{
+    text-transform: uppercase;
+    margin-top: 20px;
+    left: 20px;
+    color: #5892b6;
+    font-size: 80px;
+}
+
 .buscar{
     text-transform: uppercase;
     margin-top: 20px;
@@ -210,6 +218,13 @@ img.inicio{
     color: #5892b6;
     font-size: 80px;
 }
+
+img.imgmedicamento{
+        width: 60%;
+        height: 60%;
+        margin-top: 20px;
+        margin-left: 150px;
+    }
 
 img.informacion{
     float: left; 
@@ -495,7 +510,7 @@ img.medicament{
       -moz-box-sizing:border-box;
       box-sizing:border-box;
       border-radius:20px;
-      box-shadow: 10px 15px 8px 2px rgb(12,34,56); 
+      
   }
   input[type="search"]{
       width:250px;
@@ -506,13 +521,7 @@ img.medicament{
       color:#939393;
       font-weight:500;
       background-color:#fffbf8;
-      -moz-box-shadow: 
-          0 -2px 2px 0 rgba(199, 199, 199, 0.55),
-          0 1px 1px 0 #fff,
-          0 2px 2px 1px #fafafa,
-          0 2px 4px 0 #b2b2b2 inset,
-          0 -1px 1px 0 #f2f2f2 inset,
-          0 15px 15px 0 rgba(41, 41, 41, 0.09) inset;
+     
     
   }
   button[type="submit"]{
