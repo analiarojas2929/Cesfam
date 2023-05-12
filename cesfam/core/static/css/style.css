@@ -203,6 +203,14 @@ img.inicio{
     font-size: 80px;
 }
 
+.buscar{
+    text-transform: uppercase;
+    margin-top: 20px;
+    left: 20px;
+    color: #5892b6;
+    font-size: 80px;
+}
+
 img.informacion{
     float: left; 
     left: -100px;
@@ -486,22 +494,8 @@ img.medicament{
       -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
       box-sizing:border-box;
-      border-radius:6px;
-      -webkit-box-shadow:
-          0 2px 4px 0 rgba(72, 72, 72, 0.83),
-          0 10px 15px 0 rgba(126, 126, 126, 0.12),
-          0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset, 
-          0 2px 4px 2px rgba(255, 255, 255, 0.83) inset;
-      -moz-box-shadow: 
-          0 2px 4px 0 rgba(72, 72, 72, 0.83),
-          0 10px 15px 0 rgba(126, 126, 126, 0.12),
-          0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset, 
-          0 2px 4px 2px rgba(255, 255, 255, 0.83) inset;
-      box-shadow: 
-          0 2px 4px 0 rgba(72, 72, 72, 0.83),
-          0 10px 15px 0 rgba(126, 126, 126, 0.12),
-          0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset, 
-          0 2px 4px 2px rgba(255, 255, 255, 0.83) inset;
+      border-radius:20px;
+      box-shadow: 10px 15px 8px 2px rgb(12,34,56); 
   }
   input[type="search"]{
       width:250px;
@@ -541,4 +535,12 @@ img.medicament{
 .containerbuscar{
     margin-top: 20px;
     padding: 40px;
+}
+
+
+img.imgbuscar{
+    width: 60%;
+    height: 60%;
+    margin-top: 20px;
+    margin-left: 20px;
 }
