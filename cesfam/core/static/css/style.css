@@ -96,14 +96,6 @@ body {
     
  }
 
-img.inicio{
-    float: left; 
-    left: 180px;
-    position: relative;
-    top: 80px;
-    width: 190px;
-    z-index: 1;
-}
 
 
 .nombre{
@@ -219,21 +211,7 @@ img.inicio{
     font-size: 80px;
 }
 
-img.imgmedicamento{
-        width: 60%;
-        height: 60%;
-        margin-top: 20px;
-        margin-left: 150px;
-    }
 
-img.informacion{
-    float: left; 
-    left: -100px;
-    position: relative;
-    top: 80px;
-    width: 500px;
-    z-index: 1;
-}
 
 .nombre-cesfam{
     left: 600px;
@@ -285,14 +263,6 @@ a{
     list-style: none;
 }
 
-img.registro{
-    float: left; 
-    left: 180px;
-    position: relative;
-    top: 20px;
-    width: 190px;
-    z-index: 1;
-}
 
 
 .nombreregistro{
@@ -475,13 +445,6 @@ ul.medic{
     padding: 20px 40px;
 }
 
-img.retiroinv{
-    margin-top: 40px;
-}
-
-img.medicament{
-    padding: 20px;
-}
 
 
 .imginventario{
@@ -552,4 +515,46 @@ img.imgbuscar{
     height: 60%;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+img.imgmedicamento{
+    width: 60%;
+    height: 60%;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+img.informacion{
+float: left; 
+left: -100px;
+position: relative;
+top: 80px;
+width: 500px;
+z-index: 1;
+}
+
+img.inicio{
+    float: left; 
+    left: 180px;
+    position: relative;
+    top: 80px;
+    width: 190px;
+    z-index: 1;
+}
+
+img.retiroinv{
+    margin-top: 40px;
+}
+
+img.medicament{
+    padding: 20px;
+}
+
+img.registro{
+    float: left; 
+    left: 180px;
+    position: relative;
+    top: 20px;
+    width: 190px;
+    z-index: 1;
 }
