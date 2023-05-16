@@ -32,7 +32,109 @@ body {
     text-align: none;
     position: relative;
  }
+
+ #loginajuste {
+ 
+    background-color: #5892b6; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 4;
+    width: 550px;
+    height: 850px;
+    text-align: none;
+    position: relative;
+ }
+
+ #loginperfil {
+ 
+    background-color: #5892b6; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 4;
+    width: 550px;
+    height: 850px;
+    text-align: none;
+    position: relative;
+ }
+
+ #loginpre {
+ 
+    background-color: #5892b6; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 4;
+    width: 550px;
+    height: 850px;
+    text-align: none;
+    position: relative;
+ }
+
+ #loginres {
+ 
+    background-color: #5892b6; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 4;
+    width: 550px;
+    height: 850px;
+    text-align: none;
+    position: relative;
+ }
+
  #informacion {
+ 
+    background-color: #ffff; 
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 5;
+    grid-column-end: 6;
+    
+ }
+
+ #informacionres {
+ 
+    background-color: #ffff; 
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 5;
+    grid-column-end: 6;
+    
+ }
+
+ #informacionajuste {
+ 
+    background-color: #ffff; 
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 5;
+    grid-column-end: 6;
+    
+ }
+
+ #informacionperfil {
+ 
+    background-color: #ffff; 
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 5;
+    grid-column-end: 6;
+    
+ }
+
+ 
+ #informacionpre {
  
     background-color: #ffff; 
     grid-row-start: 1;

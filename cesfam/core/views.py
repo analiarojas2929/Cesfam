@@ -21,3 +21,14 @@ def buscar(request):
 def medicamentos(request):
     return render(request,'core/medicamentos.html')
 
+def perfil(request):
+    return render(request,'core/perfil.html')
+
+def prescripcion(request):
+    return render(request,'core/prescripcion.html')
+
+def reserva(request):
+    return render(request,'core/reserva.html')
+
+def ajustes(request):
+    return render(request,'core/ajustes.html')
