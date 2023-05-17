@@ -14,56 +14,35 @@
 
     <div class="angry-grid">
         <div id="login">&nbsp;
-
-            <div class="btninventario">
-                <button class="btninventario" onclick="window.location.href='inventario.html'">
-                    <img class="btninventario" src="{% static '../static/img/inventario.png' %}" alt="Inventario" />
-                </button>
+            <nav class="menu">
+                <div class="medicamentos">
+                    <a href="{% url 'menu' %}" class="btnmedicamento" type="button"><ul class="medic">Inventario</ul><img class="retiroinv" src="{% static '../static/img/inventario.png' %}"></a>
+                </div>
+            <div class="medicamentos">
+                <a href="{% url 'menu' %}" class="btnmedicamento" type="button"><ul class="medic">Perfil</ul><img class="retiroinv" src="{% static '../static/img/Perfil.png' %}"></a>
             </div>
-
-            <br><br>
-
-            <div id="btnperfil">
-                <button class="button" onclick="window.location.href='perfil.html'">
-                    <img class="perfil" src="{% static '../static/img/perfil.png' %}" alt="Perfil" />
-                </button>
+            <div class="medicamentos">
+                <a href="{% url 'menu' %}" class="btnmedicamento" type="button"><ul class="medic">Buscar</ul><img class="retiroinv" src="{% static '../static/img/Buscar.png' %}"></a>
             </div>
-
-
-            <div id="btnbuscar">
-                <button class="button" onclick="window.location.href='buscar.html'">
-                    <img class="buscar" src="{% static '../static/img/buscar.png' %}" alt="Buscar" />
-                </button>
+            <div class="retirodemedicamento">
+                <a href="{% url 'menu' %}" class="btnretiro" type="button"><ul class="retiroul">Reservas</ul><img class="retiroinv" src="{% static '../static/img/reservas.png' %}"></a>
             </div>
-
-
-            <div id="btnreservas">
-                <button class="button" onclick="window.location.href='reservas.html'">
-                    <img class="reservas" src="{% static '../static/img/reservas.png' %}" alt="Reservas" />
-                </button>
+            <div class="retirodemedicamento">
+                <a href="{% url 'menu' %}" class="btnretiro" type="button"><ul class="retiroul">Preescripciones</ul><img class="retiroinv" src="{% static '../static/img/prescripciones.png' %}"></a>
             </div>
-
-
-            <div id="btnprescripciones">
-                <button class="button" onclick="window.location.href='prescripciones.html'">
-                    <img class="prescripciones" src="{% static '../static/img/prescripciones.png' %}"
-                        alt="Prescripciones" />
-                </button>
+            <div class="retirodemedicamento">
+                <a href="{% url 'menu' %}" class="btnretiro" type="button"><ul class="retiroul">Ajustes</ul><img class="retiroinv" src="{% static '../static/img/ajustes.png' %}"></a>
             </div>
-
-            <div id="btnajustes">
-                <button class="button" onclick="window.location.href='ajustes.html'">
-                    <img class="ajustes" src="{% static '../static/img/ajustes.png' %}" alt="Ajustes" />
-                </button>
-            </div>
+        </nav>
         </div>
     
     <div id="informacion">&nbsp;
-        <div class="menuimg">
-            <img class="menuimg" src="{% static '../static/img/menu.png' %}" alt="" />
+        <div class="menu">
+            <a class="inventario">Menú</a>
         </div>
+            <img class="menuimg" src="{% static '../static/img/menu.png' %}">
+        
     </div>
-</div>
 </body>
 
 </html>
