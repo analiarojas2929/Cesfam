@@ -18,8 +18,8 @@ def registro(request):
 
 
 
-def medicamentos(request):
-    return render(request,'core/farmaceutico/medicamentos.html')
+def menumedicamentos(request):
+    return render(request,'core/farmaceutico/menumedicamentos.html')
 
 def registromedicamento(request):
     return render(request,'core/farmaceutico/registromedicamento.html')   

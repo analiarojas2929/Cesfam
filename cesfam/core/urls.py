@@ -10,7 +10,7 @@ urlpatterns = [
     path('',views.registro,name='registro'),
     path('login',views.login,name='login'),
     #farmaceutico
-    path('medicamentos',views.medicamentos,name='medicamentos'),
+    path('menumedicamentos',views.menumedicamentos,name='menumedicamentos'),
     path('registromedicamento',views.registromedicamento,name='registromedicamento'),
     path('retiromedicamento',views.retiromedicamento,name='retiromedicamento'),
     path('stock',views.stock,name='stock'),

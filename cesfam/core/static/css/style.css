@@ -70,7 +70,7 @@ body {
 
     grid-row-end: 5;
     grid-column-end: 4;
-    width: 550px;
+    width: 650px;
     height: 850px;
     text-align: none;
     position: relative;
@@ -410,6 +410,29 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
+.btnverpre {
+    left: 200px;
+    position: absolute;
+    top: 350px;
+    background-color: #5B6C6D;
+    color: #FFFFFF;
+    padding: 10px 65px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btnanpre {
+    left: 200px;
+    position: absolute;
+    top: 430px;
+    background-color: #5B6C6D;
+    color: #FFFFFF;
+    padding: 10px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 .btnseguimiento {
     left: 200px;
@@ -430,6 +453,18 @@ body {
     background-color: #5B6C6D;
     color: #FFFFFF;
     padding: 10px 100px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btnvolverpre {
+    left: 200px;
+    position: absolute;
+    top: 500px;
+    background-color: #5B6C6D;
+    color: #FFFFFF;
+    padding: 10px 110px;
     border-radius: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -847,6 +882,11 @@ img.registro {
 .perfilres{
     margin-top: 100px;
     margin-left: 260px;
+}
+
+.perfilpre{
+    margin-top: 100px;
+    margin-left: 200px;
 }
 
 ul.ulperfil{
