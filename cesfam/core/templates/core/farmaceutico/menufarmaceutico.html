@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Farmaceutico</title>
+    <link rel="icon" type="image/x-icon" href="{% static '../static/img/logo.png' %}">
+    <link type="text/css" rel="stylesheet" href="{% static '../static/css/style.css' %}">
+</head>
+<body>
+    <div class="angry-grid">
+        <div id="iniciofarm">&nbsp;
+            <div class="menu">
+            <div class="stock">
+                <a href="{% url 'stock' %}" class="btnstock" type="button"><ul class="stocka">stock</ul><img class="stockinvimg" src="{% static '../static/img/stockinv.png' %}"></a>
+            </div>
+            <div class="medicamentos">
+                <a href="{% url 'medicamentos' %}" class="btnmedicamento" type="button"><ul class="medic">medicamentos</ul><img class="medicament" src="{% static '../static/img/medicamentosinv.png' %}"></a>
+            </div>
+            <div class="registromedicamento">
+                <a href="{% url 'registromedicamento' %}" class="btnregistro" type="button"><ul class="registroul">Registro de medicamentos</ul><img class="registromed" src="{% static '../static/img/registrodemedicantosinv.png' %}"></a>
+            </div>
+            <div class="retirodemedicamento">
+                <a href="{% url 'retiromedicamento' %}" class="btnretiro" type="button"><ul class="retiroul">Retiro de medicamentos</ul><img class="retiroinv" src="{% static '../static/img/retiroinv.png' %}"></a>
+            </div>
+        </div>
+        </div>
+    <div id="informacionfarm">&nbsp;
+        <div class="inventario">
+            <a class="inventario">Farmaceutico</a>
+        </div>
+        <img class="imginventario" src="{% static '../static/img/inventarioimg.png' %}">
+    </div>
+</body>
+</html>

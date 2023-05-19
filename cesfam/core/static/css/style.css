@@ -185,6 +185,20 @@ body {
     position: relative;
 }
 
+#iniciofarm {
+
+    background-color: #5892b6;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 5;
+    grid-column-end: 4;
+    width: 710px;
+    height: 850px;
+    text-align: none;
+    position: relative;
+}
+
 #iniciobusc {
 
     background-color: #5892b6;
@@ -200,7 +214,16 @@ body {
 }
 
 
+#informacionfarm{
 
+    background-color: #ffff;
+    grid-row-start: 1;
+    grid-column-start: 4;
+
+    grid-row-end: 5;
+    grid-column-end: 6;
+
+}
 
 #informacioninv {
 
@@ -743,6 +766,14 @@ img.informacion {
     position: relative;
     top: 80px;
     width: 500px;
+    z-index: 1;
+}
+
+img.registrologo {
+    float: left;
+    position: relative;
+    top: 80px;
+    width: 300px;
     z-index: 1;
 }
 

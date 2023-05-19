@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+    <link rel="icon" type="image/x-icon" href="{% static '../static/img/logo.png' %}">
+    <link type="text/css" rel="stylesheet" href="{% static '../static/css/style.css' %}">
+</head>
+
+<body>
+    <div class="angry-grid">
+        <div id="iniciobusc">&nbsp;
+            <div class="containerbuscar">
+                <form class="searchbox" action="">
+                    <input type="search" placeholder="Search" />
+                    <button type="submit" value="search">&nbsp;</button>
+                </div>
+        </div>
+        <div id="informacionbusc">&nbsp;
+            <div class="buscar">
+                <a class="buscar">buscar</a>
+            </div>
+            <img class="imgbuscar" src="{% static '../static/img/buscarpg.png' %}">
+        </div>
+</body>
+
+</html>

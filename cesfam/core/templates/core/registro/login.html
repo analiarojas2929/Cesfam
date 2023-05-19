@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" type="image/x-icon" href="{% static '../static/img/logo.png' %}">
+    <link type="text/css" rel="stylesheet" href="{% static '../static/css/style.css' %}">
+</head>
+
+<body>
+    <div class="angry-grid">
+        <div id="login">&nbsp;
+            <div class="labelregistro">
+                <a class="aregistro">Login</a>
+            </div>
+            <nav class="inicio"> <img class="inicio" src="{% static '../static/img/logologin.png' %}" alt="inicio" />
+            </nav>
+            <form>
+                <div class="nombre">
+                    <label for="input" class="input-label">Ingrese nombre de usuario</label>
+                    <input type="text" class="input-text">
+                    <div class="password">
+                        <label for="input" class="input-label-contraseña">ingrese contraseña</label>
+                        <input type="password" class="input-text">
+                        <a href="{% url 'menu' %}" class="btningresar" type="button" role="button">Ingresar</a>
+                        <div class="olvido-contraseña">
+                            <a class="olvido" href="">¿Olvido su contraseña?</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="informacion">&nbsp;
+            <div class="bienvenido">
+                <a class="bienvenidos">bienvenido</a>
+            </div>
+            <div class="informacion">
+                <img class="informacion" src="{% static '../static/img/medico.png' %}" alt="inicio" />
+            </div>
+            <div class="nombree">
+                <a class="nombre-cesfam">Cesfam "sin nombre"</a>
+                <a class="fecha">2023</a>
+            </div>
+            <div class="ayuda">
+                <button class="btnayuda" role="button"> Ayuda</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
