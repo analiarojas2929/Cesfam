@@ -14,7 +14,21 @@
 <body>
     <div class="angry-grid">
         <div id="loginajuste">&nbsp;
-            
+            <div class="informacion">
+                <img class="perfilajuste" src="{% static '../static/img/ajustespg.png' %}" alt="inicio" />
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnidioma" type="button" role="button">Idioma</a>
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnmodonoc" type="button" role="button">Modo Nocturno</a>
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnaccesibilidad" type="button" role="button">Accesibilidad</a>
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnacercade" type="button" role="button">Acerca de nosotros</a>
+            </div>
         </div>
         <div id="informacionajuste">&nbsp;
 

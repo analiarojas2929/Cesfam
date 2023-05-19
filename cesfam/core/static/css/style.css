@@ -42,7 +42,7 @@ body {
 
     grid-row-end: 5;
     grid-column-end: 4;
-    width: 550px;
+    width: 650px;
     height: 850px;
     text-align: none;
     position: relative;
@@ -420,6 +420,58 @@ body {
     border-radius: 20px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.btnidioma {
+    left: 150px;
+    position: absolute;
+    top: 350px;
+    background-color: #5B6C6D;
+    color: #FFFFFF;
+    padding: 10px 120px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btnmodonoc {
+    left: 150px;
+    position: absolute;
+    top: 420px;
+    background-color: #5B6C6D;
+    color: #FFFFFF;
+    padding: 10px 75px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btnaccesibilidad{
+    left: 150px;
+    position: absolute;
+    top: 480px;
+    background-color: #5B6C6D;
+    color: #FFFFFF;
+    padding: 10px 85px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btnacercade{
+    left: 150px;
+    position: absolute;
+    top: 540px;
+    background-color: #5B6C6D;
+    color: #FFFFFF;
+    padding: 10px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .btnanpre {
@@ -886,6 +938,11 @@ img.registro {
 
 .perfilpre{
     margin-top: 100px;
+    margin-left: 200px;
+}
+
+.perfilajuste{
+    margin-top: 50px;
     margin-left: 200px;
 }
 
