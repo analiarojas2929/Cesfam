@@ -12,7 +12,19 @@
 <body>
     <div class="angry-grid">
         <div id="inicioinv">&nbsp;
-            
+            <div class="informacion">
+                <img class="perfilmedicamento" src="{% static '../static/img/medicamentos.png' %}" alt="inicio" />
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnverreserva" type="button" role="button">ver Reserva</a>
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnseguimiento" type="button" role="button">seguimiento</a>
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnvolver" type="button" role="button">volver</a>
+            </div>
+
         </div>
     <div id="informacioninv">&nbsp;
         <div class="medicamentospg">
