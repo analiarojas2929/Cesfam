@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="icon" type="image/x-icon" href="{% static '../static/img/logo.png' %}">
+    <link type="text/css" rel="stylesheet" href="{% static '../static/css/style.css' %}">
+</head>
+
+<body>
+    <div class="angry-grid">
+        <div id="loginres">&nbsp;
+            <div class="informacion">
+                <img class="perfilres" src="{% static '../static/img/reserva.png' %}" alt="inicio" />
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnverreserva" type="button" role="button">ver Reserva</a>
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnseguimiento" type="button" role="button">seguimiento</a>
+            </div>
+            <div class="botones">
+                <a href="{% url 'menu' %}" class="btnvolver" type="button" role="button">volver</a>
+            </div>
+
+        </div>
+        <div id="informacionres">&nbsp;
+
+        </div>
+    </div>
+</body>
+
+</html>

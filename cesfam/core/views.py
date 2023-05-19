@@ -53,11 +53,11 @@ def menu(request):
 def perfil(request):
     return render(request,'core/medico/perfil.html')
 
-def prescripcion(request):
-    return render(request,'core/medico/prescripcion.html')
+def menuprescripcion(request):
+    return render(request,'core/medico/menuprescripcion.html')
 
-def reserva(request):
-    return render(request,'core/medico/reserva.html')
+def menureserva(request):
+    return render(request,'core/medico/menureserva.html')
 
 
 

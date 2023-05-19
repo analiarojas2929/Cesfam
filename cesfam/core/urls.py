@@ -20,9 +20,9 @@ urlpatterns = [
     path('buscar',views.buscar,name='buscar'),
     path('menu',views.menu,name='menu'),
     path('perfil',views.perfil,name='perfil'),
-    path('prescripcion',views.prescripcion,name='prescripcion'),
+    path('menuprescripcion',views.menuprescripcion,name='menuprescripcion'),
     path('inventario',views.inventario,name='inventario'),
-    path('reserva',views.reserva,name='reserva'),
+    path('menureserva',views.menureserva,name='menureserva'),
 #paciente
     path('tomahora',views.tomahora,name='toma de hora'),
 ]
