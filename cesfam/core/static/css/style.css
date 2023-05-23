@@ -185,6 +185,20 @@ body {
     position: relative;
 }
 
+#iniciomedic {
+
+    background-color: #5892b6;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 5;
+    grid-column-end: 4;
+    width: 610px;
+    height: 850px;
+    text-align: none;
+    position: relative;
+}
+
 #iniciofarm {
 
     background-color: #5892b6;
@@ -226,6 +240,17 @@ body {
 }
 
 #informacioninv {
+
+    background-color: #ffff;
+    grid-row-start: 1;
+    grid-column-start: 4;
+
+    grid-row-end: 5;
+    grid-column-end: 6;
+
+}
+
+#informacionmedic {
 
     background-color: #ffff;
     grid-row-start: 1;
@@ -661,36 +686,39 @@ a {
 }
 
 .btnagregar {
-    left: 180px;
+    left: 190px;
     position: absolute;
-    top: 270px;
-    background-color: #363636;
-    border: 2px solid #363636;
+    top: 320px;
+    background-color: #5B6C6D;
     color: #FFFFFF;
-    padding: 10px 60px;
+    padding: 10px 70px;
     border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .btneditar {
-    left: 180px;
+    left: 190px;
     position: absolute;
-    top: 340px;
-    background-color: #363636;
-    border: 2px solid #363636;
+    top: 390px;
+    background-color: #5B6C6D;
     color: #FFFFFF;
-    padding: 10px 60px;
+    padding: 10px 80px;
     border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .btnquitar {
-    left: 180px;
+    left: 190px;
     position: absolute;
-    top: 410px;
-    background-color: #363636;
-    border: 2px solid #363636;
+    top: 460px;
+    background-color: #5B6C6D;
     color: #FFFFFF;
-    padding: 10px 60px;
+    padding: 10px 80px;
     border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .btnstock {
@@ -966,8 +994,8 @@ img.registro {
 
 .perfilmedicamento{
     margin-top: 100px;
-    margin-left: 260px;
-    width: 170px;
+    margin-left: 190px;
+    width: 200px;
 }
 .perfilres{
     margin-top: 100px;
@@ -988,4 +1016,167 @@ ul.ulperfil{
     color: #ffff;
     margin-left: 290px;
     margin-top: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.category h2 {
+    color: #fffbfb;
+    margin-bottom: 10px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+}
+
+.product img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.product .info {
+    flex-grow: 1;
+}
+
+.product .name {
+    font-weight: bold;
+    color: #333;
+}
+
+.product .description {
+    color: #777;
+}
+
+.product .stock {
+    font-size: 14px;
+    color: #888;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #160ca0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2e0d88;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.quantity-input {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input label {
+    flex: 1;
+}
+
+.quantity-input input[type="number"] {
+    width: 70px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
 }

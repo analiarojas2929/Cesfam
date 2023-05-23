@@ -12,7 +12,38 @@
 <body>
     <div class="angry-grid">
         <div id="inicioinv">&nbsp;
-            
+            <div class="container">
+                <h1>Retiro de Medicamentos</h1>
+                <form action="procesar_retiro.php" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="medicamento">Medicamento a retirar:</label>
+                        <select id="medicamento" name="medicamento" required>
+                            <option value="">Seleccione un medicamento</option>
+                            <option value="medicamento1">Medicamento 1</option>
+                            <option value="medicamento2">Medicamento 2</option>
+                            <option value="medicamento3">Medicamento 3</option>
+                            <!-- Agrega más opciones aquí -->
+                        </select>
+                    </div>
+        
+                    <div class="form-group quantity-input">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="razon">Motivo del retiro:</label>
+                        <textarea id="razon" name="razon" required></textarea>
+                    </div>
+        
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
     <div id="informacioninv">&nbsp;
         
