@@ -274,7 +274,7 @@ body {
 
 
 
-.nombre {
+.nombree {
     float: left;
     height: 150px;
     left: 90px;
@@ -304,7 +304,7 @@ body {
     text-transform: uppercase;
 }
 
-.input-text {
+.input-text1 {
     line-height: 0;
     font-size: 17px;
     display: block;
@@ -1180,3 +1180,47 @@ textarea {
 .form-group:last-child {
     margin-bottom: 0;
 }
+
+.container1 {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group input[type="text"],
+  .form-group select {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #110b6d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-submit:hover {
+    background-color: #1a128d;
+  }
