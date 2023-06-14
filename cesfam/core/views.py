@@ -1,5 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Entrega_medicamentos, Entrega_pendiente, Paciente, CustomUsuario, Personal, Medicamento, Receta_medica
+from django.contrib.auth import authenticate, login, logout
+from .forms import creacion_personal, creacion_receta, modificar_stock
+
 # Create your views here.
 
 #registro
@@ -70,3 +74,61 @@ def tomahora(request):
     return render(request,'core/paciente/tomahora.html')
 
 #fin paciente
+
+
+#Creacion Admin ------------------------------------------------------------------
+
+def admin_creacion(request):
+    if request.POST:
+        form = creacion_personal(request.POST, request.FILES)
+        if form.is_valid():
+
+            sexo_personal = form.data.get('sexo_personal')
+            if sexo_personal == 'is_masc':
+                personal = Personal(run_personal = form.cleaned_data.get('run_personal'),
+                dv_personal = form.cleaned_data.get('dv_personal'),
+                nombre_personal = form.cleaned_data.get('nombre_personal'),
+                apellido_personal = form.cleaned_data.get('apellido_personal'),
+                mail_personal = form.cleaned_data.get('mail_personal'),
+                is_masculino = True,
+                edad_personal = form.cleaned_data.get('edad_personal'),
+                tipo = form.cleaned_data.get('tipo'))
+            else:
+                personal = Personal(run_personal = form.cleaned_data.get('run_personal'),
+                dv_personal = form.cleaned_data.get('dv_personal'),
+                nombre_personal = form.cleaned_data.get('nombre_personal'),
+                apellido_personal = form.cleaned_data.get('apellido_personal'),
+                mail_personal = form.cleaned_data.get('mail_personal'),
+                is_femenino = True,
+                edad_personal = form.cleaned_data.get('edad_personal'),
+                tipo = form.cleaned_data.get('tipo'))
+
+            nombre = form.cleaned_data.get('nombre_personal')
+            apellido = form.cleaned_data.get('apellido_personal')
+            run = form.cleaned_data.get('run_personal')
+            dv = form.cleaned_data.get('dv_personal')
+            tipo = form.cleaned_data.get('tipo')
+
+            if tipo == 'is_farm':
+                user = CustomUsuario.objects.create_user(username = nombre[0:2] + '.' + apellido,
+                password = apellido[0].capitalize() + str(run) + '-' + str(dv),
+                is_farmaceutico = True)
+                user.save()
+                personal.save()
+            elif tipo == 'is_med':
+                user = CustomUsuario.objects.create_user(username = nombre[0:2] + '.' + apellido,
+                password = apellido[0].capitalize() + str(run) + '-' + str(dv),
+                is_medico = True)
+                user.save()
+                personal.save()
+            elif tipo == 'is_adm':
+                user = CustomUsuario.objects.create_user(username = nombre[0:2] + '.' + apellido,
+                password = apellido[0].capitalize() + str(run) + '-' + str(dv),
+                is_admin = True)
+                user.save()
+                personal.save()
+
+            messages.success(request, 'Usuario creado correctamente, su cuenta: \nnombre: ' + nombre[0:2] + '.' + apellido +
+            '\ncontraseña: '+ apellido[0].capitalize() + str(run) + '-' + str(dv))
+
+    return render(request, 'admin/admin_creacion.html', {'form': creacion_personal})
