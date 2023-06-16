@@ -1,84 +1,57 @@
 from django import forms
-from .models import  Paciente, Personal, Receta_medica, Medicamento
+from .models import CustomUsuario,TipoUsuario, Medico, Paciente, Farmaceutico, TipoMedicamento, Medicamento, Receta, DetalleReceta, Entrega, DetalleEntrega
 
-#Create your forms here
-
-#Lista de tuplas
-
-tipos = (
-    ('is_farm', 'Farmaceutico'),
-    ('is_med', 'Medico'),
-    ('is_adm', 'Administrador')
-)
-
-sexo = (
-    ('is_masc', 'Masculino'),
-    ('is_feme', 'Femenino')
-)
-
-#Colocar dentro de una funcion
-def lista_personal():
-    lista_personal = ()
-    lista_personal = list(lista_personal)
-    personal = Personal.objects.all()
-    for p in personal:
-        lista_personal.append([p.id, str(p.nombre_personal + ' ' + p.apellido_personal)])
-    lista_personal = tuple(lista_personal)
-    return lista_personal
-
-def lista_medicamentos():
-    lista_medicamentos = ()
-    lista_medicamentos = list(lista_medicamentos)
-    medicamento = Medicamento.objects.all()
-    for m in medicamento:
-        lista_medicamentos.append([m.id, str(m.nombre_medicamento)])
-    lista_medicamentos = tuple(lista_medicamentos)
-    return lista_medicamentos
-
-def lista_pacientes():
-    lista_pacientes = ()
-    lista_pacientes = list(lista_pacientes)
-    paciente = Paciente.objects.all()
-    for p in paciente:
-        lista_pacientes.append([p.id, str(p.nombre_paciente + ' ' + p.apellido_paciente)])
-    lista_pacientes = tuple(lista_pacientes)
-    return lista_pacientes
-
-#Creacion_personal
-class creacion_personal(forms.Form):
-    run_personal = forms.CharField(max_length=8)
-    dv_personal = forms.CharField(max_length=1)
-    nombre_personal = forms.CharField(max_length=25)
-    apellido_personal = forms.CharField(max_length=25)
-    mail_personal = forms.EmailField()
-    sexo_personal = forms.ChoiceField(choices=sexo)
-    edad_personal = forms.CharField(max_length=3)
-    tipo = forms.ChoiceField(choices=tipos)
-
+class CustomUsuarioForm(forms.ModelForm):
     class Meta:
-        model = Personal, 
-        fields = ['run_personal', 'dv_personal', 'nombre_personal', 'apellido_personal',
-        'mail_personal', 'sexo_personal', 'edad_personal', 'tipo']
+        model = CustomUsuario
+        fields = ('username', 'email', 'password', 'id_tipo_usuario')
 
-#Creacion Receta
-class creacion_receta(forms.Form):
-    prescripcion_receta = forms.CharField(max_length=200)
-    fecha_receta = forms.DateField()
-    cantidad_medicamentos = forms.CharField(max_length=4)
-    id_personal = forms.ChoiceField(choices=lista_personal())
-    id_medicamento = forms.ChoiceField(choices=lista_medicamentos())
-    id_paciente = forms.ChoiceField(choices=lista_pacientes())
 
+class TipoUsuarioForm(forms.ModelForm):
     class Meta:
-        model = Receta_medica,
-        fields = ['prescripcion_receta', 'fecha_receta', 'cantidad_medicamentos','id_personal', 'id_medicamento', 'id_paciente']
+        model = TipoUsuario
+        fields = ('nombre_tipo_usuario', 'descripcion')
+class MedicoForm(forms.ModelForm):
+    class Meta:
+        model = Medico
+        fields = ['id_medico','nombre_medico','especialidad','correo_electronico','telefono','id_tipo_usuario']
 
+class PacienteForm(forms.ModelForm):
+    class Meta:
+        model = Paciente
+        fields = ['id_paciente','nombre_paciente','apellido_paciente','fecha_nacimiento','direccion','correo_electronico','telefono']
 
+class FarmaceuticoForm(forms.ModelForm):
+    class Meta:
+        model = Farmaceutico
+        fields = ['id_farmaceutico','nombre_farmaceutico','apellido_farmaceutico','correo_electronico','telefono','id_tipo_usuario']
 
-#Modificar stock
-class modificar_stock(forms.Form):
-    medicamento = forms.ChoiceField(choices=lista_medicamentos(), required=True)
-    nombre_medicamento = forms.CharField(max_length=25, required=False)
-    fecha_elab_medicamento = forms.DateField(required=False)
-    fecha_venc_medicamento = forms.DateField(required=False)
-    cantidad_medicamento = forms.CharField(max_length=4, required=False)
+class TipoMedicamentoForm(forms.ModelForm):
+    class Meta:
+        model = TipoMedicamento
+        fields = ['id_tipo_medicamento','nombre_tipo_medicamento','descripcion']
+
+class MedicamentoForm(forms.ModelForm):
+    class Meta:
+        model = Medicamento
+        fields = ['id_medicamento','nombre_medicamento','descripcion','stock','fecha_vencimiento','id_tipo_medicamento']
+
+class RecetaForm(forms.ModelForm):
+    class Meta:
+        model = Receta
+        fields = ['id_receta','id_medico','id_paciente','fecha']
+
+class DetalleRecetaForm(forms.ModelForm):
+    class Meta:
+        model = DetalleReceta
+        fields = ['id_detalle_receta','id_receta','id_medicamento','dosis','frecuencia']
+
+class EntregaForm(forms.ModelForm):
+    class Meta:
+        model = Entrega
+        fields = ['id_entrega','id_receta','id_paciente','fecha_entrega']
+
+class DetalleEntregaForm(forms.ModelForm):
+    class Meta:
+        model = DetalleEntrega
+        fields = ['id_detalle_entrega','id_entrega','id_medicamento','cantidad_entregada']
