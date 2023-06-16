@@ -102,7 +102,7 @@ class DetalleReceta(models.Model):
 class Entrega(models.Model):
     id_entrega = models.IntegerField(primary_key=True)
     id_receta = models.ForeignKey(Receta, on_delete=models.CASCADE)
-    id_paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE)
+    rut_entrega = models.CharField(max_length=255)
     fecha_entrega = models.DateField()
 
     def __str__(self):
