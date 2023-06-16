@@ -49,7 +49,7 @@ class DetalleRecetaForm(forms.ModelForm):
 class EntregaForm(forms.ModelForm):
     class Meta:
         model = Entrega
-        fields = ['id_entrega','id_receta','id_paciente','fecha_entrega']
+        fields = ['id_entrega','id_receta','rut_entrega','fecha_entrega']
 
 class DetalleEntregaForm(forms.ModelForm):
     class Meta:
